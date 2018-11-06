@@ -2,23 +2,23 @@
   <!-- Logo -->
   <%= link_to "LLC", root_path, id: "navbar-home" %>
   <!-- Right Navigation -->
-  <div class="navbar-right d-none d-md-block">
-    <a class="navbar-item navbar-link" id="oaaat-link">Books</a>
-    <a class="navbar-item navbar-link" id="media-link">Media</a>
-    <a class="navbar-item navbar-link" id="about-link">About</a>
+  <div class="navbar-right hidden-xs hidden-sm">
+    <a class="navbar-item navbar-link" id="oaaat-link">Courses</a>
+    <a class="navbar-item navbar-link" id="media-link">About</a>
     <a class="navbar-item navbar-link" id="contact-link">Contact</a>
+    <a class="navbar-item navbar-link" id="about-link">Log in</a>
   </div>
   <!-- Dropdown appearing on mobile only -->
 
-  <div class="d-block d-md-none">
+  <div class="navbar-item hidden-md hidden-lg navbar-dropdown">
     <div class="dropdown">
       <i class="fas fa-bars dropdown-toggle bars-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       </i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu" aria-labelled-by="dropdownMenuButton">
-        <li><a class="dropdown-item" id="oaaat-link-dropdown">Books</a></li>
-        <li><a class="dropdown-item" id="media-link-dropdown">Media</a></li>
-        <li><a class="dropdown-item" id="about-link-dropdown">About</a></li>
+        <li><a class="dropdown-item" id="oaaat-link-dropdown">Courses</a></li>
+        <li><a class="dropdown-item" id="media-link-dropdown">About</a></li>
         <li><a class="dropdown-item" id="contact-link-dropdown">Contact</a></li>
+        <li><a class="dropdown-item" id="about-link-dropdown">Log in</a></li>
       </div>
     </div>
   </div>

@@ -3,26 +3,14 @@
   position: fixed;
   background: transparent;
   box-shadow: none;
-  color: white;
   transition: all 0.3s ease;
   z-index: 1;
   height: 64px;
   width: 100vw;
-  font-family: "PT Sans", sans-serif;
-  padding: 0px 50px;
+  // padding: 0px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  #navbar-home {
-    letter-spacing: 0.8px;
-    font-size: 24px;
-    height: 40px;
-    color: white;
-    &:hover {
-      color: white;
-      text-decoration: none;
-    }
-  }
 }
 
 .fill {
@@ -37,6 +25,17 @@
   }
 }
 
+#navbar-home {
+  letter-spacing: 0.8px;
+  font-size: 24px;
+  color: #3a3a3a;
+  position: absolute;
+  left: 55px;
+  &:hover {
+    color: #3a3a3a;
+    text-decoration: none;
+  }
+}
 
 /* Right section */
 .navbar-right {
@@ -44,6 +43,8 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 24px;
+  position: absolute;
+  right: 55px;
 }
 
 /* Basic navbar item */
@@ -56,7 +57,7 @@
 /* Navbar link */
 .navbar-link {
   color: #3a3a3a;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1.5px;
 }
 
@@ -71,6 +72,11 @@
 
 .navbar-link-underline {
   border-bottom: 1.8px solid #3a3a3a;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  right: 30px;
 }
 
 .dropdown-menu-right {

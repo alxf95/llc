@@ -1,1 +1,12 @@
 // Specific CSS for your home-page
+.home-banner {
+  background-color: #FFFFFB;
+  min-height: 100vh;
+  // padding-top: 64px;
+  position: relative;
+}
+
+#map-home {
+  max-width: 100%;
+  height: auto;
+}
