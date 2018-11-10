@@ -2,7 +2,7 @@
 .home-banner {
   background-color: #FFFFFB;
   min-height: 100vh;
-  // padding-top: 64px;
+  color: #1A1A1A;
   position: relative;
 }
 
@@ -30,6 +30,23 @@
   top: 2px;
 }
 
+#about-us-div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 78px;
+  right: 0;
+  left: 0;
+}
+
+#about-us {
+  text-align: center;
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
 .arrow-container {
   display: flex;
   justify-content: center;
@@ -43,6 +60,7 @@
 #arrow {
   cursor: pointer;
   width: 18px;
+  opacity: 0.9;
 }
 
 .bounce {
