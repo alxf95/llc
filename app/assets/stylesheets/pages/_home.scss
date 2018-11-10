@@ -6,7 +6,57 @@
   position: relative;
 }
 
+.home-banner-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 #map-home {
-  max-width: 100%;
+  max-width: 140%;
   height: auto;
+  margin-left: -125px;
+}
+
+#typed {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.typed-cursor {
+  font-size: 25px;
+  margin: 1.5px;
+  position: relative;
+  top: 2px;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+#arrow {
+  cursor: pointer;
+  width: 18px;
+}
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  -o-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30%, 70% {
+    transform: translateY(-20px);
+  }
 }

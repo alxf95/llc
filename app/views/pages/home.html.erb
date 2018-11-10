@@ -1,13 +1,23 @@
 <div class="home-banner">
   <div class="container">
-    <div class="row">
+    <div class="row home-banner-content">
       <div class="home-banner-left col-xs-12 col-md-6">
-        <h4>Learn a language from a local expert</h4>
+        <span id="typed"></span>
       </div>
       <div class="home-banner-right col-xs-12 col-md-6">
         <%= image_tag "map", id: "map-home" %>
       </div>
-
+      <div class="arrow-container bounce">
+        <%= image_tag "down-arrow", id: "arrow" %>
+      </div>
     </div>
   </div>
 </div>
+<script>
+  var typed = new Typed('#typed',{
+      strings: ['Learn a language from a local expert', 'Redistribute wealth to a local expert', 'Learn a language from a local expert'],
+      backSpeed: 20,
+      typeSpeed: 30,
+      backDelay: 1500,
+  });
+</script>
