@@ -6,3 +6,17 @@ const typed = new Typed('#typed',{
     typeSpeed: 40,
     backDelay: 1500,
 });
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() >= $(window).height() - 64) {
+    $('.navbar').addClass('fill-navbar');
+  } else {
+    $('.navbar').removeClass('fill-navbar');
+  }
+});
+
+$("#arrow, #about-us-banner").on("click", function(event){
+  $('html, body').animate({
+    scrollTop: $("#about-us-anchor").offset().top
+  }, 1000);
+});

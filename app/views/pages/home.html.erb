@@ -1,21 +1,82 @@
 <div class="home-banner">
   <div class="container">
     <div class="row home-banner-content">
-      <div class="home-banner-left col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6">
         <span id="typed"></span>
-        <%#= simple_form_for @language, wrapper: :inline_form, html: { class: 'form-inline' } do |f| %>
-        <%#= f. %>
+        <%#= simple_form_for @user_language do |f| %>
+          <%#= f.association :language %>
+          <%#= f.submit %>
+        <%# end %>
       </div>
-      <div class="home-banner-right col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6">
         <%= image_tag "coloured-map", id: "map-home" %>
         <div class="pin"></div>
       </div>
-      <div id="about-us-div">
-        <p id="about-us">About us</p>
+      <div id="about-us-banner-div">
+        <p id="about-us-banner">About us</p>
       </div>
       <div class="arrow-container bounce">
         <%= image_tag "down-arrow", id: "arrow" %>
       </div>
     </div>
+  </div>
+</div>
+<!-- , wrapper: :inline_form, html: { class: 'form-inline' } -->
+<div id="taglines-section" class="home-container">
+  <div class="container">
+    <div class="tagline-content">
+      <h4>Pay what you can afford tuition</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="tagline-content">
+      <h4>Learn from a local</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+<div id="middle-content-home">
+  <div class="container">
+    <div class="home-container">
+      <h4 id="our-courses-header">Our courses</h4>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="language-home">
+            <h4>Arabic</h4>
+            <p class="homepage-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
+            <p class="find-out-more">Find out more</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="language-home">
+            <h4>Urdu</h4>
+            <p class="homepage-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
+            <p class="find-out-more">Find out more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr id="middle-content-home-divider">
+  <div class="container">
+    <div class="home-container">
+      <h4>Our next event</h4>
+      <div id="event-home">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <p id="event-home-title">Event at London Bridge</p>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p id="event-home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="anchor" id="about-us-anchor"></div>
+<div id="about-us-section" class="home-container">
+  <div class="container">
+    <h4>Who are we?</h4>
+    <p class="homepage-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
   </div>
 </div>
