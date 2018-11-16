@@ -1,0 +1,14 @@
+.llc-button {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 16px;
+  background-color: #E74754;
+  padding: 10px 30px;
+  border-radius: 1px;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #d2414d;
+  }
+}
