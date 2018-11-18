@@ -3,8 +3,8 @@
     <div class="row home-banner-content">
       <div class="col-xs-12 col-md-6">
         <span id="typed"></span>
-        <%#= simple_form_for @user_language do |f| %>
-          <%#= f.association :language %>
+        <%#= simple_form_for User.new, wrapper: :inline_form, html: { class: 'form-inline' } do |f| %>
+          <%#= f.input :email %>
           <%#= f.submit %>
         <%# end %>
       </div>
@@ -21,7 +21,6 @@
     </div>
   </div>
 </div>
-<!-- , wrapper: :inline_form, html: { class: 'form-inline' } -->
 <div id="taglines-section" class="home-container">
   <div class="container">
     <div class="tagline-content">
