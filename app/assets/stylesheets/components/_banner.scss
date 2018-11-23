@@ -1,5 +1,5 @@
 // Specific CSS for your home-page
-.home-banner {
+#home-banner {
   background-color: #FFFFFB;
   min-height: 100vh;
   color: #1A1A1A;
@@ -10,6 +10,11 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+#banner-sign-up {
+  width: 50%;
+  margin: 50px auto;
 }
 
 #map-home {
