@@ -1,0 +1,69 @@
+#llcModal {
+  margin: 50px auto;
+  padding: 0;
+  h3 {
+    color: #1A1A1A;
+    letter-spacing: 1px;
+  }
+}
+
+.llc-modal-content {
+  background-color: #FFFFFB;
+  border-radius: 5px;
+  height: 520px;
+  width: 450px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: space-around;
+}
+
+.llc-modal-title {
+  margin-top: 28px;
+}
+
+.llc-modal-body {
+  position: relative;
+}
+
+.llc-modal-dialog {
+}
+
+
+.modal-button {
+  box-shadow: none;
+  margin: 30px;
+  background-color: #E74754;
+}
+
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-form-inputs {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.modal-custom-form-group {
+  height: 72px;
+  margin-bottom: 22px;
+}
+
+.cross {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  right: 20px;
+  color: #1A1A1A;
+  opacity: 0.9;
+}
+
+.cross:hover {
+  opacity: 0.5;
+  text-shadow: none;
+}

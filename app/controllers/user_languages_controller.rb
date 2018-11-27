@@ -11,6 +11,7 @@ class UserLanguagesController < ApplicationController
 
   def create
     @user_language = UserLanguage.new(user_language_params)
+    @user_language.user = current_user
     @user_language.save
   end
 

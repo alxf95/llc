@@ -1,14 +1,3 @@
-body {
-  background-color: #FFFFFB;
-  color: rgba(255,255,255,0.7);
-  letter-spacing: 1px;
-}
-
-h2 {
-  margin-bottom: 30px;
-  color: #1A1A1A;
-  text-align: center;
-}
 input.login-form-input {
   background-color: #FFFFFB;
   color: #1A1A1A;
@@ -24,12 +13,13 @@ input.login-form-input {
 
 input.login-form-input:focus {
   box-shadow: none;
-  border-bottom: 1px solid rgba(255,255,255,1);
+  border-bottom: 1px solid rgba(26,26,26,0.5);
 }
 
 label.login-form-label {
   font-weight: normal;
   font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .custom-form-group {
@@ -49,13 +39,4 @@ label.login-form-label {
     top: 0;
     left: 0;
   }
-}
-
-.btn {
-  color: rgba(255,255,255,0.9);
-}
-
-.btn:hover {
-  color: rgba(255,255,255,0.9);
-  text-decoration: none;
 }

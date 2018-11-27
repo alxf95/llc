@@ -6,7 +6,13 @@
     <a class="navbar-item navbar-link" id="courses-link">Courses</a>
     <a class="navbar-item navbar-link" id="about-link">About</a>
     <a class="navbar-item navbar-link" id="contact-link">Contact</a>
-    <a class="navbar-item navbar-link" id="login-link">Log in</a>
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete, id:"sign-out-link" do %>
+        <p class="navbar-item navbar-link">Sign out</p>
+      <% end %>
+    <% else %>
+      <a class="navbar-item navbar-link" id="login-link">Log in</a>
+    <% end %>
   </div>
   <!-- Dropdown appearing on mobile only -->
 
@@ -18,7 +24,9 @@
         <li><a class="dropdown-item" id="oaaat-link-dropdown">Courses</a></li>
         <li><a class="dropdown-item" id="media-link-dropdown">About</a></li>
         <li><a class="dropdown-item" id="contact-link-dropdown">Contact</a></li>
-        <li><a class="dropdown-item" id="about-link-dropdown">Log in</a></li>
+        <% unless user_signed_in? %>
+          <li><a class="dropdown-item" id="about-link-dropdown">Log in</a></li>
+        <% end %>
       </div>
     </div>
   </div>
