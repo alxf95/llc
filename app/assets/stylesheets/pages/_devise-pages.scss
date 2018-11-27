@@ -1,0 +1,44 @@
+.devise-page {
+  background-color: #FFFFFB;
+  min-height: 100vh;
+  color: #1A1A1A;
+}
+
+.devise-page-content {
+  margin-top: 40px;
+}
+
+.devise-title {
+  text-align: center;
+}
+
+.devise-form-inputs {
+  margin: 24px 0;
+}
+
+.devise-custom-form-group {
+  position: relative;
+  margin-bottom: 32px;
+  height: 75px;
+  label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+#remember-me-form-group {
+  margin: 30px 0;
+}
+
+#remember-me-label {
+  position: relative;
+  left: 26px;
+  bottom: 3px;
+}

@@ -11,7 +11,7 @@
         <p class="navbar-item navbar-link">Sign out</p>
       <% end %>
     <% else %>
-      <a class="navbar-item navbar-link" id="login-link">Log in</a>
+      <a class="navbar-item navbar-link" id="login-link" type="button" data-toggle="modal" data-target="#llcModalLogin">Log in</a>
     <% end %>
   </div>
   <!-- Dropdown appearing on mobile only -->
@@ -25,7 +25,7 @@
         <li><a class="dropdown-item" id="media-link-dropdown">About</a></li>
         <li><a class="dropdown-item" id="contact-link-dropdown">Contact</a></li>
         <% unless user_signed_in? %>
-          <li><a class="dropdown-item" id="about-link-dropdown">Log in</a></li>
+          <li><a class="dropdown-item" id="about-link-dropdown" type="button" data-toggle="modal" data-target="#llcModalLogin">Log in</a></li>
         <% end %>
       </div>
     </div>
@@ -36,3 +36,51 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+<!-- Login modal -->
+
+<div class="modal fade" id="llcModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered llc-modal-dialog" role="document">
+    <div class="modal-content" id="llc-modal-login-content">
+      <div class="modal-body llc-modal-body">
+        <h3 class="modal-title llc-modal-title" id="exampleModalLongTitle">Log In</h3>
+        <button type="button" class="close cross" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <%= simple_form_for(:user, as: :user, url: session_path(:user)) do |f| %>
+
+        <div class="form-inputs modal-form-inputs">
+          <div class="custom-form-group">
+            <%= f.input :email,
+                               required: true,
+                               autofocus: true,
+                               label: "Email",
+                               label_html: { class: "form-label" },
+                               input_html: { autocomplete: "email", class: "form-input" } %>
+          </div>
+          <div class="custom-form-group">
+            <%= f.input :password,
+                        required: true,
+                        hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                        label: "Password",
+                        label_html: { class: "form-label" },
+                        input_html: { autocomplete: "new-password", class: "form-input"  } %>
+          </div>
+        <div class="form-actions flexbox-column">
+          <%= f.button :submit, "Log in", class: "llc-button modal-button" %>
+        </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= content_for :after_js do %>
+  <script>
+    $('#llcModalLogin').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+  </script>
+<% end %>

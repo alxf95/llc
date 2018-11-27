@@ -3,9 +3,9 @@
     <div class="row home-banner-content">
       <div class="col-xs-12 col-md-6" id="home-banner-left">
         <span id="typed"></span>
-          <div id="banner-sign-up">
-            <a  type="button" class="llc-button" data-toggle="modal" data-target="#llcModal">Sign Up</a>
-          </div>
+        <div id="banner-sign-up">
+          <a type="button" class="llc-button" data-toggle="modal" data-target="#llcModalSignup">Sign Up</a>
+        </div>
       </div>
       <div class="col-xs-12 col-md-6">
         <%= image_tag "coloured-map.png", id: "map-home" %>
@@ -94,62 +94,17 @@
       <div class="flexbox-column">
         <p class="homepage-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
         <p class="homepage-description">Why not try one of our courses?</p>
-        <a href="#" class="llc-button">Sign Up</a>
+        <a  type="button" class="llc-button" data-toggle="modal" data-target="#llcModalSignup">Sign Up</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal -->
-
-<div class="modal fade" id="llcModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered llc-modal-dialog" role="document">
-    <div class="modal-content llc-modal-content">
-      <div class="modal-body llc-modal-body">
-        <h3 class="modal-title llc-modal-title" id="exampleModalLongTitle">Sign Up</h3>
-        <button type="button" class="close cross" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <%= simple_form_for(User.new, as: :user, url: registration_path(:user)) do |f| %>
-
-          <div class="form-inputs modal-form-inputs">
-            <div class="custom-form-group modal-custom-form-group">
-              <%= f.input :email,
-                        required: true,
-                        label: "Email",
-                        label_html: { class: "login-form-label" },
-                        input_html: { autocomplete: "email", class: "login-form-input" }%>
-            </div>
-            <div class="custom-form-group modal-custom-form-group">
-              <%= f.input :password,
-                          required: true,
-                          hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                          label: "Password",
-                          label_html: { class: "login-form-label" },
-                          input_html: { autocomplete: "new-password", class: "login-form-input"  } %>
-            </div>
-            <div class="custom-form-group modal-custom-form-group">
-              <%= f.input :password_confirmation,
-                          required: true,
-                          label: "Confirm password",
-                          label_html: { class: "login-form-label" },
-                          input_html: { autocomplete: "new-password", class: "login-form-input"  } %>
-            </div>
-          <div class="form-actions flexbox-column">
-            <%= f.button :submit, "Submit", class: "llc-button modal-button" %>
-          </div>
-          </div>
-          <% end %>
-
-      </div>
-    </div>
-  </div>
-</div>
-
+<%= render "signup_modal.html.erb" %>
 
 <%= content_for :after_js do %>
   <script>
-    $('#llcModal').on('shown.bs.modal', function () {
+    $('#llcModalSignup').on('shown.bs.modal', function () {
       $('#llcInput').trigger('focus')
     })
   </script>
