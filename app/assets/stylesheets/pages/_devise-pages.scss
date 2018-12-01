@@ -1,7 +1,7 @@
 .devise-page {
   background-color: #FFFFFB;
   min-height: 100vh;
-  color: #1A1A1A;
+  color: $gray;
 }
 
 .devise-page-content {
@@ -18,7 +18,7 @@
 
 .devise-custom-form-group {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   height: 75px;
   label {
     position: absolute;
@@ -41,4 +41,13 @@
   position: relative;
   left: 26px;
   bottom: 3px;
+}
+
+.devise-links {
+  text-align: center;
+  margin: 10px 0;
+  a {
+    color: $red;
+    letter-spacing: 0.5px;
+  }
 }

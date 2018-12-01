@@ -18,6 +18,6 @@ class UserLanguagesController < ApplicationController
   private
 
   def user_language_params
-    params.require(:user_language).permit(:language_id)
+    params.require(:user_language).permit(:language)
   end
 end

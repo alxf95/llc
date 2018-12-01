@@ -61,7 +61,7 @@ a.anchor {
 
 #middle-content-home {
   background-color: #FFFFFB;
-  color: #1A1A1A;
+  color: $gray;
   letter-spacing: 1px;
 }
 
@@ -83,7 +83,7 @@ a.anchor {
 }
 
 .find-out-more {
-  color: #E74754;
+  color: $red;
 }
 
 #middle-content-home-divider {
@@ -101,7 +101,7 @@ a.anchor {
 
 #event-home-title {
   margin-left: 30px;
-  color: #E74754;
+  color: $red;
   text-align: center;
 }
 

@@ -16,11 +16,11 @@
 .fill-navbar {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 1px 0 0 rgba(0,0,0,0.05);
   background: white;
-  color: #1A1A1A;
+  color: $gray;
   #navbar-home {
-    color: #1A1A1A;
+    color: $gray;
     &:hover {
-      color: #1A1A1A;
+      color: $gray;
     }
   }
 }
@@ -28,11 +28,11 @@
 #navbar-home {
   letter-spacing: 0.8px;
   font-size: 24px;
-  color: #1A1A1A;
+  color: $gray;
   position: absolute;
   left: 55px;
   &:hover {
-    color: #1A1A1A;
+    color: $gray;
     text-decoration: none;
   }
 }
@@ -56,18 +56,18 @@
 
 /* Navbar link */
 .navbar-link {
-  color: #1A1A1A;
+  color: $gray;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
 .navbar-link:hover {
-  color: #E74754;
+  color: $red;
   text-decoration: none;
 }
 
 .navbar-link-underline {
-  border-bottom: 1.8px solid #1A1A1A;
+  border-bottom: 1.8px solid $gray;
 }
 
 #sign-out-link {

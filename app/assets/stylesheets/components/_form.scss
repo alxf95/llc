@@ -1,11 +1,11 @@
 input.form-input {
   background-color: #FFFFFB;
-  color: #1A1A1A;
+  color: $gray;
   letter-spacing: 1px;
   font-size: 16px;
   border-radius: 0;
   // border-bottom: none;
-  border-bottom: 1px solid #1A1A1A;
+  border-bottom: 1px solid $gray;
   border-top: none;
   border-left: none;
   border-right: none;
