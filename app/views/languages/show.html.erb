@@ -1,2 +1,5 @@
 <h1>Languages#show</h1>
 <p>Find me in app/views/languages/show.html.erb</p>
+<%= link_to language_user_languages_path do %>
+  <%= @language.name %>
+<% end %>

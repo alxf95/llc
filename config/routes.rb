@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :languages, only: [:index, :show] do
     resources :user_languages, only: [:new, :create]
   end
+
+
 end
