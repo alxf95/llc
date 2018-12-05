@@ -1,2 +1,5 @@
 <h1>UserLanguages#new</h1>
 <p>Find me in app/views/user_languages/new.html.erb</p>
+<%= link_to language_user_languages_path, method: :post do %>
+  <p>Learn <%= @language.name %></p>
+<% end %>
