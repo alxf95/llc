@@ -16,6 +16,12 @@
   align-items: center;
 }
 
+.flexbox-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a.anchor {
   display: block;
   position: relative;
@@ -24,7 +30,7 @@ a.anchor {
 }
 
 
-// TAGLINES SECTION //
+// TAGLINES SECTION
 
 #taglines-section {
   background-color: #26547C;
@@ -57,10 +63,10 @@ a.anchor {
 }
 
 
-// MIDDLE SECTION //
+// MIDDLE SECTION
 
 #middle-content-home {
-  background-color: #FFFFFB;
+  background-color: $app-white;
   color: $gray;
   letter-spacing: 1px;
 }
@@ -110,7 +116,7 @@ a.anchor {
 }
 
 
-// ABOUT SECTION //
+// ABOUT SECTION
 
 #about-us-section {
   background-color: #26547C;

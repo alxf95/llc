@@ -1,0 +1,33 @@
+.languages-page {
+  background-color: $app-white;
+  min-height: 100vh;
+}
+
+#languages-header {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: $gray;
+}
+
+#languages-container {
+  margin-top: 100px;
+}
+
+.languages-language-background {
+  background-color: #C4C4C4;
+  height: 262px;
+  width: 462px;
+  position: relative;
+}
+
+.languages-language-title {
+  position: absolute;
+  text-align: center;
+  height: 60px;
+  left: 0;
+  right: 0;
+  top: 85px;
+  color: $gray;
+}
+

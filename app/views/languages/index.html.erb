@@ -1,8 +1,18 @@
-<h1>Languages#index</h1>
-<p>Find me in app/views/languages/index.html.erb</p>
-<% @languages.each do |language| %>
-  <h2><%= language.name %></h2>
-  <%= link_to language_path(language) do %>
-    <p>Find out more</p>
-  <% end %>
-<% end %>
+<div class="languages-page">
+  <div class="container">
+    <div class="home-container">
+      <h1 id="languages-header">Explore our courses</h1>
+      <div class="row" id="languages-container">
+        <% @languages.each do |language| %>
+          <div class="col-xs-12 col-md-6 flexbox-row">
+            <%= link_to language_path(language) do %>
+              <div class="languages-language-background">
+                <h3 class="languages-language-title"><%= language.name %></h3>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

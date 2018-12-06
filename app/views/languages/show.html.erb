@@ -1,5 +1,10 @@
-<h1>Languages#show</h1>
-<p>Find me in app/views/languages/show.html.erb</p>
-<%= link_to new_language_user_language_path(@language) do %>
-  <%= @language.name %>
-<% end %>
+<div class="languages-page">
+  <div class="container">
+    <div class="home-container">
+      <h1 id="languages-header"><%= @language.name %></h1>
+      <%= link_to new_language_user_language_path(@language) do %>
+        <p>Learn <%= @language.name %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
