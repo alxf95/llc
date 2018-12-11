@@ -29,11 +29,6 @@ a.anchor {
   visibility: hidden;
 }
 
-h1, h4, h3 {
-  font-weight: 400;
-}
-
-
 // TAGLINES SECTION
 
 #taglines-section {
@@ -86,6 +81,9 @@ h1, h4, h3 {
   align-items: center;
   margin: 30px;
   margin-top: 0;
+  h4 {
+    font-weight: 400;
+  }
 }
 
 .language-home-description {
@@ -94,6 +92,7 @@ h1, h4, h3 {
 
 .find-out-more {
   color: $red;
+  font-weight: 400;
 }
 
 #middle-content-home-divider {
@@ -111,6 +110,7 @@ h1, h4, h3 {
 
 #event-home-title {
   margin-left: 30px;
+  font-weight: 400;
   color: $red;
   text-align: center;
 }
@@ -132,4 +132,8 @@ h1, h4, h3 {
   p {
     margin: 0 30px 50px 30px;
   }
+}
+
+#about-us-try-courses {
+  font-weight: 400;
 }

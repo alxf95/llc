@@ -3,7 +3,14 @@
   <%= link_to "LLC", root_path, id: "navbar-home" %>
   <!-- Right Navigation -->
   <div class="navbar-right hidden-xs">
-    <a class="navbar-item navbar-link" id="courses-link">Courses</a>
+    <div class="dropdown">
+      <p class="navbar-link navbar-item">Courses</p>
+      <div class="courses-dropdown-content">
+        <a href="/languages/1">Arabic</a>
+        <a href="/languages/2">Urdu</a>
+      </div>
+    </div>
+    <!-- <a class="navbar-item navbar-link" id="courses-link">Courses</a> -->
     <a class="navbar-item navbar-link" id="about-link">About</a>
     <a class="navbar-item navbar-link" id="contact-link">Contact</a>
     <% if user_signed_in? %>
@@ -43,7 +50,7 @@
   <div class="modal-dialog modal-dialog-centered llc-modal-dialog" role="document">
     <div class="modal-content" id="llc-modal-login-content">
       <div class="modal-body llc-modal-body">
-        <h3 class="modal-title llc-modal-title" id="exampleModalLongTitle">Log In</h3>
+        <h3 class="modal-title llc-modal-title" id="llcModalLoginTitle">Log In</h3>
         <button type="button" class="close cross" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -16,6 +16,10 @@
   }
 }
 
+#llcModalSignupTitle, #llcModalLoginTitle {
+  font-weight: 400;
+}
+
 #llc-modal-signup-content {
   background-color: $app-white;
   border-radius: 5px;

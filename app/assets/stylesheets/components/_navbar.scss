@@ -57,7 +57,7 @@
 /* Navbar link */
 .navbar-link {
   color: $gray;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
@@ -69,6 +69,40 @@
 
 .navbar-link-underline {
   border-bottom: 1.8px solid $gray;
+}
+
+.courses-dropdown-content {
+  display: none;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  border: solid 1px #E6E6E6;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 20px;
+}
+
+.courses-dropdown-content a {
+  font-size: 16px;
+  // font-weight: 500;
+  color: $gray;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  &:hover {
+    color: $red;
+  }
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .courses-dropdown-content {
+  display: block;
 }
 
 #sign-out-link {

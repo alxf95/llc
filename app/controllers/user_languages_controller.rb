@@ -16,6 +16,7 @@ class UserLanguagesController < ApplicationController
     if @user_language.save
       redirect_to language_path(@user_language.language)
     else
+    raise
       render :new
     end
   end
