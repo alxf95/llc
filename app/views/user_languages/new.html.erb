@@ -1,14 +1,20 @@
 <div class="languages-page">
-  <div class="home-container">
-    <div class="container">
+  <div class="container">
+    <div id= "language-level-container">
       <p>Thank you for expressing your interest in <%= @language.name %>.<br>Before your first lesson please answer a few questions for us.</p>
-      <p>What level of <%= @language.name %> are you?</p>
-      <%= simple_form_for [@language, @user_language] do |f| %>
-        <%= f.select :user_level, ["Beginner", "Intermediate", "Advanced"] %>
-        <div class="form-actions flexbox-column">
+      <div class="row" id="language-level-selection">
+        <div class="col-xs-12-md-6">
+          <p>What level of <%= @language.name %> are you?</p>
+        </div>
+        <%= simple_form_for [@language, @user_language] do |f| %>
+        <div class="col-xs-12-md-6" id="language-level-dropdown">
+          <%= f.select :user_level, ["Beginner", "Intermediate", "Advanced"] %>
+        </div>
+      </div>
+        <div class="form-actions">
           <%= f.button :submit, "Submit", class: "llc-button" %>
         </div>
-      <% end %>
+        <% end %>
     </div>
   </div>
 </div>

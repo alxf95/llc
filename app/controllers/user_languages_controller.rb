@@ -12,11 +12,12 @@ class UserLanguagesController < ApplicationController
   end
 
   def create
-    @user_language = UserLanguage.new(language: Language.find(find_language.id), user: current_user)
+    @user_language = UserLanguage.new(user_language_params)
+    @user_language.language = Language.find(find_language.id)
+    @user_language.user = current_user
     if @user_language.save
-      redirect_to language_path(@user_language.language)
+      redirect_to edit_user_path(current_user)
     else
-    raise
       render :new
     end
   end
@@ -28,6 +29,6 @@ class UserLanguagesController < ApplicationController
   end
 
   def user_language_params
-    params.require(:user_language).permit(:id)
+    params.require(:user_language).permit(:user_level)
   end
 end
