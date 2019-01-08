@@ -6,7 +6,7 @@
 #languages-header {
   text-align: center;
   font-size: 28px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: $gray;
 }
 
@@ -15,10 +15,9 @@
 }
 
 .languages-language-background {
-  background-color: #C4C4C4;
+  background-size: cover;
   height: 262px;
   width: 462px;
-  position: relative;
 }
 
 .languages-language-title {
@@ -28,7 +27,8 @@
   left: 0;
   right: 0;
   top: 85px;
-  color: $gray;
+  color: white;
   font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 1.5px;
 }
-

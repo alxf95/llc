@@ -14,15 +14,13 @@
           <%= image_tag "coloured-map-pins.png", id: "map-home" %>
         </div>
       </div>
-      <div id="about-us-banner-div">
-        <p id="about-us-banner">About us</p>
-      </div>
       <div class="arrow-container bounce">
         <%= image_tag "down-arrow.png", id: "arrow" %>
       </div>
     </div>
   </div>
 </div>
+<div class="anchor" id="arrow-scroll-anchor"></div>
 <div id="taglines-section">
   <div class="container">
     <div class="home-container">
@@ -30,7 +28,7 @@
         <h4>Pay what you can afford tuition</h4>
         <div class="row">
           <div class="col-xs-12 col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>We charge different prices depending on how much you can afford to pay. As a guide for what is affordable we give you a suggested price based on a simple set of questions which takes into account your income and wealth. We call these questions the wealth test.</p>
           </div>
           <div class="col-xs-12 col-md-3">
             <%= image_tag "money-bag-white.png", class: "tagline-icon", id: "money-icon" %>
@@ -38,13 +36,24 @@
         </div>
       </div>
       <div class="tagline-content">
-        <h4>Learn from a local</h4>
-        <div class="row"></div>
+        <h4 id="learn-local-title">Learn from a local</h4>
+        <div class="row">
           <div class="col-xs-12 col-md-3">
             <%= image_tag "learn-white.png", class: "tagline-icon", id: "learn-icon" %>
           </div>
           <div class="col-xs-12 col-md-9">
-            <p id="tagline-second-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p id="tagline-second-description">Learning a language is not just about rules and grammar. It’s  about understanding the culture, history and politics of the people you are going to communicate with. Whether it’s learning Arabic from Gaza or Urdu via Hydrebad, our lessons connect you directly to local tutors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tagline-content">
+        <h4 id="global-wage-title">Pay a global equal wage</h4>
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <p>We pay everyone in the company the same wage of £12.70 per hour, no matter where they live in the world. We do this to make an important point: that people everywhere should be paid an equal global wage. </p>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <%= image_tag "white-globe.png", class: "tagline-icon", id: "globe-icon"%>
           </div>
         </div>
       </div>
@@ -59,15 +68,15 @@
         <div class="col-xs-12 col-md-6">
           <div class="language-home">
             <h4>Arabic</h4>
-            <p class="homepage-description language-home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
-            <p class="find-out-more">Find out more</p>
+            <p class="homepage-description language-home-description">This is the first course to be taught by Palestinian tutors living in Gaza for international students.<br><br>The course will teach Palestinian (Levantine) Arabic, a dialect spoken by over 30 million people across Palestine, Jordan, Syria and Lebanon. To find out more, hear from Karama who lives in Gaza and is coordinating the course.</p>
+            <a href="/languages/1" class="find-out-more">Find out more</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="language-home">
             <h4>Urdu</h4>
-            <p class="homepage-description language-home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
-            <p class="find-out-more">Find out more</p>
+            <p class="homepage-description language-home-description">Urdu is spoken by over 100 million people around the world and is the official language of Pakistan. This Urdu language course will be taught by Abdul Hameed from his home town of Hyderabad, Pakistan. Abdul can teach beginners and intermediate Urdu students. To find out more information, hear from Abdul himself. </p>
+            <a href= "/languages/2" class="find-out-more" id="find-out-more-middle-right">Find out more</a>
           </div>
         </div>
       </div>
@@ -90,15 +99,16 @@
     </div>
   </div>
 </div>
-<div class="anchor" id="about-us-anchor"></div>
 <div id="about-us-section">
   <div class="container">
     <div class="home-container">
       <h4>Who are we?</h4>
       <div class="flexbox-column">
-        <p class="homepage-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiae deserunt mollit anim id est laborum.</p>
-        <p class="homepage-description" id="about-us-try-courses">Why not try one of our courses?</p>
-        <a  type="button" class="llc-button" data-toggle="modal" data-target="#llcModalSignup">Sign Up</a>
+        <p class="homepage-description">In many ways, London Learning Cooperative is a simple tuition agency. We put students together with inspiring teachers, to deliver high quality and engaging private language courses. Yet, unlike normal private tuition, we organise affordable lessons, delivered by tutors from around the world, who are all paid an equal wage.</p>
+        <% unless user_signed_in? %>
+          <p class="homepage-description" id="about-us-try-courses">Why not try one of our courses?</p>
+          <a  type="button" class="llc-button" data-toggle="modal" data-target="#llcModalSignup">Sign Up</a>
+        <% end %>
       </div>
     </div>
   </div>

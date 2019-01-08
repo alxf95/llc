@@ -1,17 +1,42 @@
+<% if false %>
+  <div class="languages-page">
+    <div class="container">
+      <div class="home-container">
+        <h1 id="languages-header">Explore our courses</h1>
+        <div class="row" id="languages-container">
+          <% @languages.each do |language| %>
+            <div class="col-xs-12 col-md-6 flexbox-row">
+              <%= link_to language_path(language) do %>
+                <div class="languages-language-background">
+                  <h3 class="languages-language-title"><%= language.name %></h3>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
 <div class="languages-page">
   <div class="container">
     <div class="home-container">
       <h1 id="languages-header">Explore our courses</h1>
       <div class="row" id="languages-container">
-        <% @languages.each do |language| %>
-          <div class="col-xs-12 col-md-6 flexbox-row">
-            <%= link_to language_path(language) do %>
-              <div class="languages-language-background">
-                <h3 class="languages-language-title"><%= language.name %></h3>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
+        <div class="col-xs-12 col-md-6 flexbox-row">
+          <%= link_to language_path(@languages.first) do %>
+            <div class="languages-language-background" style="background-image:  linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%), url(<%= image_path "arabic-photo.jpeg" %>);">
+              <h3 class="languages-language-title"><%= @languages.first.name %></h3>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-xs-12 col-md-6 flexbox-row">
+          <%= link_to language_path(@languages.last) do %>
+            <div class="languages-language-background" style="background-image:  linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%), url(<%= image_path "urdu-photo.jpeg" %>);">
+              <h3 class="languages-language-title"><%= @languages.last.name %></h3>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

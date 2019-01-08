@@ -7,7 +7,7 @@
   // margin: 30px 0;
   font-weight: lighter;
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .flexbox-column {
@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-a.anchor {
+.anchor {
   display: block;
   position: relative;
   top: -64px;
@@ -37,37 +37,50 @@ a.anchor {
   font-weight: lighter;
   h4 {
     margin: 50px 0px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
   p {
-    margin: 0 30px 60px 30px;
-    letter-spacing: 1px;
+    margin: 20px 50px 60px 30px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
     text-align: justify;
   }
 }
 
+#learn-local-title {
+  margin-top: 20px !important;
+}
+
 #tagline-second-description {
-  margin-left: 45px !important;
+  margin-left: 60px !important;
 }
 
 #money-icon {
-  width: 82%;
-  margin: 0 10px;
+  position: relative;
+  width: 200px;
+  top: -50px;
 }
 
 #learn-icon {
-  width: 95%;
-  margin: 20px 30px 35px 10px;
-
+  position: relative;
+  width: 210px;
+  top: 10px;
+  left: 50px;
 }
 
+#globe-icon {
+  position: relative;
+  width: 200px;
+  top: -30px
+}
 
 // MIDDLE SECTION
 
 #middle-content-home {
   background-color: $app-white;
   color: $gray;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
 }
 
 #our-courses-header {
@@ -87,12 +100,21 @@ a.anchor {
 }
 
 .language-home-description {
-  margin: 24px 0;
+  margin: 30px 0;
 }
 
 .find-out-more {
   color: $red;
   font-weight: 400;
+  &:hover {
+    text-decoration: none;
+    color: #be3b45;
+  }
+}
+
+#find-out-more-middle-right {
+  position: relative;
+  top: 64px;
 }
 
 #middle-content-home-divider {
@@ -113,10 +135,12 @@ a.anchor {
   font-weight: 400;
   color: $red;
   text-align: center;
+  letter-spacing: 1.5px;
 }
 
 #event-home-description {
   font-weight: lighter;
+  text-align: justify;
 }
 
 
@@ -127,13 +151,17 @@ a.anchor {
   color: white;
   h4 {
     margin: 50px 0px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
   p {
     margin: 0 30px 50px 30px;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
   }
 }
 
 #about-us-try-courses {
   font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 2px !important;
 }

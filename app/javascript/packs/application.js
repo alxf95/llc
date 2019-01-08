@@ -15,8 +15,8 @@ $(window).scroll(function() {
   }
 });
 
-$("#arrow, #about-us-banner").on("click", function(event){
+$("#arrow").on("click", function(event){
   $('html, body').animate({
-    scrollTop: $("#about-us-anchor").offset().top
+    scrollTop: $("#arrow-scroll-anchor").offset().top
   }, 1000);
 });
