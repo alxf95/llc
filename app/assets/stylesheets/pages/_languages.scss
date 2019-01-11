@@ -18,6 +18,7 @@
   background-size: cover;
   height: 262px;
   width: 462px;
+  transition: all 0.3s ease;
 }
 
 .languages-language-title {
@@ -30,5 +31,30 @@
   color: white;
   font-weight: 400;
   font-size: 50px;
-  letter-spacing: 1.5px;
+  letter-spacing: 4px;
+}
+
+#arabic-card:hover {
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+#arabic-card:hover + #urdu-card {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+#urdu-card:hover {
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+#urdu-card:hover + #arabic-card {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.blur {
+  filter: blur(2px);
+  opacity: 0.7;
 }
