@@ -18,5 +18,5 @@ $(window).scroll(function() {
 $("#arrow").on("click", function(event){
   $('html, body').animate({
     scrollTop: $("#arrow-scroll-anchor").offset().top
-  }, 1000);
+  }, 800);
 });
