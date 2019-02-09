@@ -5,6 +5,9 @@
       <%= link_to new_language_user_language_path(@language) do %>
         <p>Learn <%= @language.name %></p>
       <% end %>
+      <% if @language.name == "Arabic" %>
+      <% else %>
+      <% end %>
     </div>
   </div>
 </div>
