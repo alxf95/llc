@@ -1,5 +1,4 @@
 #llcModalSignup {
-  margin: 50px auto;
   padding: 0;
   h3 {
     color: $gray;
@@ -8,7 +7,6 @@
 }
 
 #llcModalLogin {
-  margin: 100px auto;
   padding: 0;
   h3 {
     color: $gray;
@@ -41,6 +39,7 @@
 .modal-dialog {
   display: flex;
   justify-content: space-around;
+  margin: none;
 }
 
 .llc-modal-title {
