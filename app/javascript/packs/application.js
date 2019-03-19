@@ -15,8 +15,14 @@ $(window).scroll(function() {
   }
 });
 
-$("#arrow").on("click", function(event){
+$('#arrow').on('click', function(event){
   $('html, body').animate({
     scrollTop: $("#arrow-scroll-anchor").offset().top
   }, 800);
+
+});
+
+$('#arabic-card').on('mouseover', function(event){
+  console.log(event);
+  $('#urdu-card').addClass('blur');
 });

@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+=======
+<% if false %>
+  <div class="languages-page">
+    <div class="container">
+      <div class="home-container">
+        <h1 id="languages-header">Explore our courses</h1>
+        <div class="row" id="languages-container">
+          <div class="col-xs-12 col-md-6 flexbox-row">
+            <%= link_to language_path(@languages.first) do %>
+              <div class="languages-language-background" style="background-image:  linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 50%), url(<%= image_path "arabic-photo.jpeg" %>);">
+                <h3 class="languages-language-title"><%= @languages.first.name %></h3>
+              </div>
+            <% end %>
+          </div>
+          <div class="col-xs-12 col-md-6 flexbox-row">
+            <%= link_to language_path(@languages.last) do %>
+              <div class="languages-language-background" style="background-image:  linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%), url(<%= image_path "urdu-photo.jpeg" %>);">
+                <h3 class="languages-language-title"><%= @languages.last.name %></h3>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+>>>>>>> 4f168aa560ddc9e37fa2f3d0f3dc09e9441bc5c0
 <div class="languages-page">
   <div class="container">
     <div class="home-container">
